@@ -19,10 +19,10 @@ class Teacher
 
     def my_students
         Classroom.all.filter do |students|
-            students.teacher == self
+            students.teacher == self!
         end
     end
 
-    
+
 
 end

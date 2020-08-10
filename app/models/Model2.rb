@@ -21,5 +21,11 @@ class Student
             class_num.student == self
         end
     end
+    
+    def my_teachers
+        my_classrooms.map do |classroom|
+            classroom.teacher.name
+        end  
+    end
 
 end
